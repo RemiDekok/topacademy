@@ -8,8 +8,6 @@ export default class TeacherCard extends Component {
 
 	constructor(props) {
 		super(props);
-		this.props.blok.title = this.props.blok.firstname + " " + this.props.blok.lastname
-
 	}
 
 	render() {
