@@ -24,12 +24,7 @@ export default class Person extends Component {
 								<div className={css["personaldetailitem"]}>{this.props.blok.location}</div>
 							</div>
 						</div>
-						<div className={[css["box"], css["experience"]].join(" ")}>
-							<h2>Exp</h2>
-							{this.props.blok.experiences.map((nestedBlok) => (
-								<StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
-							))}
-						</div>
+						
 						<div className={[css["box"], css["foot"]].join(" ")}>
 							<div>&copy; {this.props.blok.firstname} {this.props.blok.lastname} {new Date().getFullYear()}</div>
 						</div>
