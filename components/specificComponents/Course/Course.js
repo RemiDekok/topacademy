@@ -49,7 +49,7 @@ export default class Course extends Component {
 						</div>
 					</div>
 
-					{this.props.blok.teachers && this.props.blok.teachers.map((nestedBlok) => (
+					{this.props.blok.bottombloks && this.props.blok.bottombloks.map((nestedBlok) => (
 						<StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
 					))}
 				</main>
