@@ -1,16 +1,10 @@
 ﻿@import "../../../styles/colors.scss";
 @import "../../../styles/font-mixins.scss";
 
+
 .rich-text-section {
   margin: 35px 17px 50px 18px;
-
-  a {
-    display: inline-block; /* Prevent links from taking up full width */
-    word-break: break-word; /* Break long links if needed */
-    overflow-wrap: break-word; /* Wrap links between words */
-    white-space: normal; /* Allow wrapping */
-  }
-
+  
   &--smaller {
     margin: 35px 20px 50px 20px;
   }
@@ -21,14 +15,12 @@
   }
 }
 
+
+
 @media only screen and (min-width: 500px) {
   .rich-text-section {
     margin-left: 40px;
     margin-right: 40px;
-
-    a {
-      white-space: normal; /* Ensure links don't overflow even on larger screens */
-    }
 
     &--smaller {
       max-width: 650px;
@@ -37,6 +29,8 @@
     }
   }
 }
+
+
 
 @media only screen and (min-width: 800px) {
   .rich-text-section {
@@ -54,12 +48,16 @@
   }
 }
 
+
+
 @media only screen and (min-width: 850px) {
   .rich-text-section {
     width: 780px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 70px;
+    
+   
 
     &__title {
       margin-bottom: 30px;
@@ -67,11 +65,15 @@
   }
 }
 
+
+
 @media only screen and (min-width: 1250px) {
   .rich-text-section {
     width: 1030px;
     margin-top: 70px;
     margin-bottom: 90px;
+
+    
 
     &--smaller {
       width: 820px;
@@ -81,9 +83,13 @@
   }
 }
 
+
+
 @media only screen and (min-width: 1400px) {
   .rich-text-section {
     width: 1180px;
+
+  
 
     &--smaller {
       width: 820px;
@@ -91,12 +97,52 @@
   }
 }
 
+
+
 @media only screen and (min-width: 1600px) {
   .rich-text-section {
     width: 1300px;
 
+   
+
     &--smaller {
       width: 820px;
     }
+  }
+}
+
+.rich-text-section {
+  margin: 35px 17px 50px 18px;
+
+  // Add the green border style
+  &--bordered {
+    border: 1px solid green; // Add the green border
+    padding: 5px;           // Minimal padding inside the container
+    width: fit-content;     // Ensure the width adjusts to the content
+    margin: auto;           // Center the element if needed
+  }
+
+  &--smaller {
+    margin: 35px 20px 50px 20px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    @include title-font;
+  }
+}
+
+// Example media query adjustments for the bordered section
+@media only screen and (min-width: 500px) {
+  .rich-text-section--bordered {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .rich-text-section--bordered {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
