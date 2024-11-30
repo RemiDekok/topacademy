@@ -26,14 +26,7 @@ export default class Course extends Component {
 								<div className={css["rich-text-section__rich-text"]}>{RichTextToHTML({ document: this.props.blok.description })}</div>
 							</section>
 						</div>
-						<div id="course-page__short-description" key="course-page__short-description" className={css["course-page__short-description"]}>
-							<section className={css["rich-text-section--with-navigator"]}>
-								<h2 className={css["rich-text-section__title"]}>Team members</h2>
-								{this.props.blok.teachers && this.props.blok.teachers.map((teacher) => (
-									<Element blok={teacher} key={teacher._uid} />
-								))}
-							</section>
-						</div>
+						
 						<div id="course-page__short-description" key="course-page__short-description" className={css["course-page__short-description"]}>
 							<section className={css["rich-text-section--with-navigator"]}>
 								
@@ -41,7 +34,7 @@ export default class Course extends Component {
 						</div>
 						<div id="course-page__short-description" key="course-page__short-description" className={css["course-page__short-description"]}>
 							<section className={css["rich-text-section--with-navigator"]}>
-								<p className={css["rich-text-section__title"]}>To be Continueed...</p>
+								<p className={css["rich-text-section__title"]}>Team members</p>
 								{this.props.blok.products && this.props.blok.products.map((product) => (
 									<Element blok={product} key={product._uid} />
 								))}
