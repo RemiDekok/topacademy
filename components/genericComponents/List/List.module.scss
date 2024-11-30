@@ -4,6 +4,7 @@
 
 .rich-text-section {
   margin: 35px 17px 50px 18px;
+  max-width: 250px;
   
   &--smaller {
     margin: 35px 20px 50px 20px;
@@ -108,41 +109,5 @@
     &--smaller {
       width: 820px;
     }
-  }
-}
-
-.rich-text-section {
-  margin: 35px 17px 50px 18px;
-
-  // Add the green border style
-  &--bordered {
-    border: 1px solid green; // Add the green border
-    padding: 5px;           // Minimal padding inside the container
-    width: fit-content;     // Ensure the width adjusts to the content
-    margin: auto;           // Center the element if needed
-  }
-
-  &--smaller {
-    margin: 35px 20px 50px 20px;
-  }
-
-  &__title {
-    margin-bottom: 20px;
-    @include title-font;
-  }
-}
-
-// Example media query adjustments for the bordered section
-@media only screen and (min-width: 500px) {
-  .rich-text-section--bordered {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media only screen and (min-width: 800px) {
-  .rich-text-section--bordered {
-    margin-top: 20px;
-    margin-bottom: 20px;
   }
 }
