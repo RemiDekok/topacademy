@@ -3,7 +3,7 @@ import { storyblokEditable, StoryblokComponent } from "@storyblok/react";
 import Element from "../Element/Element";
 import css from "./Driverlist.module.scss";
 
-export default class List extends Component {
+export default class Driverlistist extends Component {
   constructor(props) {
     super(props);
   }
@@ -15,7 +15,7 @@ export default class List extends Component {
         <section className={css["rich-text-section"]} {...storyblokEditable(this.props.blok)}>
           <h2 className={css["rich-text-section__title"]}>{this.props.blok.title}</h2>
           {this.props.blok.elements.map((nestedBlok) => (
-            <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
+            <Element blok={nestedBlok} key={nestedBlok._uid} />
           ))}
         </section>
       </>
