@@ -50,7 +50,7 @@ const components = {
   stages: Stages,
   personinfo: Personinfo,
   twosplit: TwoSplit,
-  Driverlist: Driverlist,
+  driverlist: Driverlist,
 };
 
 storyblokInit({
