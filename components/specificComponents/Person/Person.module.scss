@@ -1,8 +1,14 @@
 ﻿@import "../../../styles/colors.scss";
 @import "../../../styles/font-mixins.scss";
 
+a {
+  display: inline-block; /* Prevent links from taking up full width */
+  word-wrap: break-word; /* Allow breaking long words */
+  white-space: nowrap; /* Prevent wrapping, adjust if wrapping is desired */
+}
+
 .wrapper {
-  max-width: 400px;
+  max-width: 800px;
   margin: auto;
 }
 
