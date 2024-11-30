@@ -4,7 +4,6 @@
 
 .rich-text-section {
   margin: 35px 17px 50px 18px;
-  max-width: 1000px;
   &--smaller {
     margin: 35px 20px 50px 20px;
   }
@@ -101,7 +100,7 @@
 
 @media only screen and (min-width: 1600px) {
   .rich-text-section {
-    width: 1300px;
+    width: 500px;
 
    
 
