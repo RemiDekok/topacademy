@@ -1,0 +1,55 @@
+@import "../../../styles/colors.scss";
+@import "../../../styles/font-mixins.scss";
+
+/* Main container with the "split" class */
+.split {
+    display: flex;
+    justify-content: space-between; /* Space out the two columns */
+    gap: 20px; /* Space between the columns */
+    width: 100%;
+    max-width: 1200px; /* Limit the max width of the container */
+    margin: 0 auto; /* Center the layout horizontally */
+    
+    /* Ensure the two columns inside the split class take equal space */
+    .column {
+      flex: 1; /* This makes the two columns take equal width */
+      padding: 20px; /* Padding for the content inside each column */
+      box-sizing: border-box; /* Ensures padding is included in the width */
+    }
+  
+    /* Optional styling for the left column */
+    .column.left {
+      background-color: #f4f4f4; /* Example background color */
+    }
+  
+    /* Optional styling for the right column */
+    .column.right {
+      background-color: #ffffff; /* Example background color */
+    }
+  }
+  
+  /* Responsive styling for mobile devices */
+  @media (max-width: 768px) {
+    .split {
+      flex-direction: column; /* Stack the columns vertically on smaller screens */
+      gap: 10px; /* Space between stacked columns */
+    }
+  
+    .column {
+      width: 100%; /* Make each column take full width when stacked */
+      padding: 15px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .split {
+      flex-direction: column; /* Stack the columns vertically on smaller screens */
+      gap: 10px; /* Space between stacked columns */
+    }
+  
+    .column {
+      width: 100%; /* Make each column take full width when stacked */
+      padding: 15px;
+    }
+  }
+  

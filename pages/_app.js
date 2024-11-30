@@ -26,7 +26,7 @@ import ImageCarousel from '../components/genericComponents/ImageCarousel/ImageCa
 import Product from '../components/specificComponents/Product/Product';
 import Location from '../components/specificComponents/Location/Location';
 import Personinfo from '../components/genericComponents/Personinfo/Personinfo';
-
+import TwoSplit from '../components/layoutComponents/TwoSplit/TwoSplit';
 
 const components = {
   person: Teacher,
