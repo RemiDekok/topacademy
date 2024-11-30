@@ -4,7 +4,8 @@
 /* Main container with the "split" class */
 .split {
     display: flex;
-    justify-content: fit-content; /* Space out the two columns */
+    justify-content: center; /* Space out the two columns */
+    align-items: center;
     gap: 100px; /* Space between the columns */
     width: 100%;
     margin: 0 auto; /* Center the layout horizontally */
