@@ -15,7 +15,7 @@ export default class List extends Component {
         <section className={css["rich-text-section"]} {...storyblokEditable(this.props.blok)}>
           <h2 className={css["rich-text-section__title"]}>{this.props.blok.title}</h2>
           {this.props.blok.elements.map((nestedBlok) => (
-            <Element blok={nestedBlok} key={nestedBlok._uid} />
+            <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
           ))}
         </section>
       </>
