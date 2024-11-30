@@ -24,7 +24,7 @@ import TwoCol from '../components/layoutComponents/TwoCol/TwoCol';
 import ThreeCol from '../components/layoutComponents/ThreeCol/ThreeCol';
 import ImageCarousel from '../components/genericComponents/ImageCarousel/ImageCarousel';
 import Product from '../components/specificComponents/Product/Product';
-import Location from '../components/specificComponents/Location/Location';
+import Stages from '../components/specificComponents/Stages/Stages';
 import Personinfo from '../components/genericComponents/Personinfo/Personinfo';
 import TwoSplit from '../components/layoutComponents/TwoSplit/TwoSplit';
 
