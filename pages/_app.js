@@ -27,6 +27,7 @@ import Product from '../components/specificComponents/Product/Product';
 import Stages from '../components/specificComponents/Stages/Stages';
 import Personinfo from '../components/genericComponents/Personinfo/Personinfo';
 import TwoSplit from '../components/layoutComponents/TwoSplit/TwoSplit';
+import Driverlist from '../components/genericComponents/Driverlist/Driverlist';
 
 const components = {
   person: Teacher,
@@ -48,7 +49,8 @@ const components = {
   product: Product,
   stages: Stages,
   personinfo: Personinfo,
-  twosplit: TwoSplit
+  twosplit: TwoSplit,
+  Driverlist: Driverlist,
 };
 
 storyblokInit({
