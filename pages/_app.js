@@ -46,8 +46,9 @@ const components = {
   threecol: ThreeCol,
   imagecarousel: ImageCarousel,
   product: Product,
-  location: Location,
-  personinfo: Personinfo
+  stages: Stages,
+  personinfo: Personinfo,
+  twosplit: TwoSplit
 };
 
 storyblokInit({
